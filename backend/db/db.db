@@ -1,0 +1,15 @@
+const sqlite3 = require('sqlite3').verbose();
+const fs = require('fs');
+const path = require('path');
+
+// Create database file if not exists
+const dbPath = path.join(__dirname, 'database.db');
+const db = new sqlite3.Database(dbPath);
+
+// Load schema
+const initSQL = fs.readFileSync(path.join(__dirname, 'init.sql')).toString();
+db.exec(initSQL);
+
+module.exports = db;
+
+
