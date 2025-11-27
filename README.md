@@ -39,7 +39,7 @@ Users can register, log in with JWT authentication, connect to a mock broker usi
   * Holdings table
   * Current price per asset
   * PnL (+/-) and PnL %
-* Clean UI with custom CSS styles
+* Clean UI 
 
 ### 🗄️ **Backend**
 
@@ -61,9 +61,6 @@ Users can register, log in with JWT authentication, connect to a mock broker usi
   * Login
   * Register
   * Dashboard
-* Axios-based API client
-* CSS modular styling
-
 
 ---
 
@@ -80,7 +77,7 @@ Create `.env` inside `backend/`:
 
 ```
 JWT_SECRET=your_secret_key
-PORT=4000
+
 ```
 
 Start the backend server:
