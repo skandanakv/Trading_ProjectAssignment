@@ -1,3 +1,4 @@
+---
  📌 **Trading Dashboard – Full Stack Assignment**
 
 A full-stack trading dashboard built using **React**, **Node.js**, **Express**, and **SQLite**.
