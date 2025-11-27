@@ -1,7 +1,4 @@
-
----
-
-# 📌 **Trading Dashboard – Full Stack Assignment**
+ 📌 **Trading Dashboard – Full Stack Assignment**
 
 A full-stack trading dashboard built using **React**, **Node.js**, **Express**, and **SQLite**.
 Users can register, log in with JWT authentication, connect to a mock broker using credentials, and fetch portfolio data (balance + holdings + PnL calculations).
@@ -63,6 +60,24 @@ Users can register, log in with JWT authentication, connect to a mock broker usi
   * Dashboard
 
 ---
+
+<img width="809" height="745" alt="Screenshot 2025-11-27 at 2 32 16 PM" src="https://github.com/user-attachments/assets/f2bd46f6-e446-4125-a9ba-f92c2b29b643" />
+
+<img width="817" height="547" alt="Screenshot 2025-11-27 at 2 32 53 PM" src="https://github.com/user-attachments/assets/de532d1e-192f-45e4-b05c-37e684996e99" />
+
+
+<img width="1273" height="609" alt="Screenshot 2025-11-27 at 2 33 32 PM" src="https://github.com/user-attachments/assets/c80da1e1-a1fd-4535-99aa-d69692cd0ff1" />
+
+
+
+
+
+
+
+
+
+
+
 
 ## 🛠️ Setup & Installation
 
