@@ -1,5 +1,3 @@
-Here is a **clean, professional, interview-ready README.md** for your project.
-You can **copy–paste it exactly** into your `README.md` file.
 
 ---
 
