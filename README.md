@@ -1,8 +1,10 @@
+
 ---
- 📌 **Trading Dashboard – Full Stack Assignment**
+
+# 📌 **Trading Dashboard – Full Stack Assignment**
 
 A full-stack trading dashboard built using **React**, **Node.js**, **Express**, and **SQLite**.
-Users can register, log in with JWT authentication, connect to a mock broker using credentials, and fetch portfolio data (balance + holdings + PnL calculations).
+Users can register, log in with JWT authentication, connect to a mock broker, and fetch portfolio data (balance + holdings + PnL calculations).
 
 ---
 
@@ -11,15 +13,17 @@ Users can register, log in with JWT authentication, connect to a mock broker usi
 ### 🔐 **User Authentication**
 
 * Register new users
-* Mock OTP verification (1234)
+* Mock OTP verification (`1234`)
 * Password hashing using **bcrypt**
 * Login using **JWT tokens**
 * Protected API routes
 
+---
+
 ### 🔗 **Broker Connection**
 
 * "Connect Broker" button in dashboard
-* Sends:
+* Sends broker credentials:
 
   * `broker_userId`
   * `broker_password`
@@ -27,7 +31,9 @@ Users can register, log in with JWT authentication, connect to a mock broker usi
 
   * Wallet Balance
   * Holdings
-  * Dynamic PnL calculations (currentPrice - avgPrice)
+  * Dynamic PnL calculations
+
+---
 
 ### 📊 **Dashboard**
 
@@ -35,15 +41,17 @@ Users can register, log in with JWT authentication, connect to a mock broker usi
 
   * Available balance
   * Holdings table
-  * Current price per asset
+  * Current asset prices
   * PnL (+/-) and PnL %
-* Clean UI 
+* Clean UI
+
+---
 
 ### 🗄️ **Backend**
 
 * Node.js + Express
 * SQLite database
-* Routes:
+* Endpoints:
 
   * `/api/register`
   * `/api/login`
@@ -51,10 +59,12 @@ Users can register, log in with JWT authentication, connect to a mock broker usi
 * JWT authentication middleware
 * Dynamic broker balance calculation
 
+---
+
 ### 🎨 **Frontend**
 
 * React (CRA)
-* User-friendly pages:
+* Pages:
 
   * Login
   * Register
@@ -62,29 +72,27 @@ Users can register, log in with JWT authentication, connect to a mock broker usi
 
 ---
 
-<img width="809" height="745" alt="Screenshot 2025-11-27 at 2 32 16 PM" src="https://github.com/user-attachments/assets/f2bd46f6-e446-4125-a9ba-f92c2b29b643" />
+## 📷 Screenshots
 
-<img width="817" height="547" alt="Screenshot 2025-11-27 at 2 32 53 PM" src="https://github.com/user-attachments/assets/de532d1e-192f-45e4-b05c-37e684996e99" />
+<p align="center">
+  <img width="700" alt="Login Page Screenshot" src="https://github.com/user-attachments/assets/f2bd46f6-e446-4125-a9ba-f92c2b29b643" />
+</p>
 
+<p align="center">
+  <img width="700" alt="Register Page Screenshot" src="https://github.com/user-attachments/assets/de532d1e-192f-45e4-b05c-37e684996e99" />
+</p>
 
-<img width="1273" height="609" alt="Screenshot 2025-11-27 at 2 33 32 PM" src="https://github.com/user-attachments/assets/c80da1e1-a1fd-4535-99aa-d69692cd0ff1" />
+<p align="center">
+  <img width="900" alt="Dashboard Screenshot" src="https://github.com/user-attachments/assets/c80da1e1-a1fd-4535-99aa-d69692cd0ff1" />
+</p>
 
-
-
-
-
-
-
-
-
-
-
+---
 
 ## 🛠️ Setup & Installation
 
 ### 📌 1. Backend Setup
 
-```
+```bash
 cd backend
 npm install
 ```
@@ -93,16 +101,15 @@ Create `.env` inside `backend/`:
 
 ```
 JWT_SECRET=your_secret_key
-
 ```
 
-Start the backend server:
+Start backend:
 
-```
+```bash
 node index.js
 ```
 
-Backend runs on:
+Runs at:
 
 ```
 http://localhost:4000
@@ -112,13 +119,13 @@ http://localhost:4000
 
 ### 📌 2. Frontend Setup
 
-```
+```bash
 cd frontend/client
 npm install
 npm start
 ```
 
-Frontend runs on:
+Runs at:
 
 ```
 http://localhost:3000
@@ -130,8 +137,9 @@ http://localhost:3000
 
 ### **POST /api/register**
 
-Registers a new user
-Request body:
+Registers a new user.
+
+**Request body:**
 
 ```json
 {
@@ -149,8 +157,7 @@ Request body:
 
 ### **POST /api/login**
 
-Returns JWT token
-Request:
+**Request:**
 
 ```json
 {
@@ -159,7 +166,7 @@ Request:
 }
 ```
 
-Response:
+**Response:**
 
 ```json
 {
@@ -171,14 +178,15 @@ Response:
 
 ### **POST /api/connect-broker**
 
-Protected route — requires JWT
-Request headers:
+Protected — requires JWT.
+
+**Headers:**
 
 ```
 Authorization: Bearer <token>
 ```
 
-Body:
+**Body:**
 
 ```json
 {
@@ -187,7 +195,7 @@ Body:
 }
 ```
 
-Response:
+**Response:**
 
 ```json
 {
@@ -207,5 +215,4 @@ Response:
 **Skandana KV**
 
 ---
-
 
